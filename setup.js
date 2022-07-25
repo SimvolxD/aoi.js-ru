@@ -11,7 +11,7 @@ bot.onMessage()
 const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./commands/")
 
-// ru Создайте папку "commands" и в папке commands создовайте команды!
+//Создайте папку "commands" и в папке commands создовайте команды!
 
 //Пример команды (ping)
 bot.command({
