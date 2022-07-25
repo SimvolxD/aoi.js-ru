@@ -1,8 +1,8 @@
 const aoijs = require("aoi.js")
 
 const bot = new aoijs.Bot({
-token: "DISCRD BOT TOKEN",
-prefix: "DISCRD BOT PREFIX",
+token: "Токен",
+prefix: "Префикс любой",
 intents: "all"
 })
 
@@ -12,15 +12,14 @@ const loader = new aoijs.LoadCommands(bot)
 loader.load(bot.cmd,"./commands/")
 
 // ru Создайте папку "commands" и в папке commands создовайте команды!
-// en Create a "commands" folder and in the commands folder create commands!
 
-//Command Example (ping)
+//Пример команды (ping)
 bot.command({
 name: "ping",
 code: `Pong! $pingms`
 })
 
-//Ready Event
+//Готовое событие
 bot.readyCommand({
     channel: "",
     code: `$log[Ready on $userTag[$clientID]]`
